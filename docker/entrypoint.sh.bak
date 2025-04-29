@@ -3,9 +3,6 @@ set -e
 CONFIG_FILE="/app/config.properties"
 # Check if the config file exists
 if [ ! -f "$CONFIG_FILE" ]; then
-  ls
-  cd app
-  ls
   echo "Config file not found at $CONFIG_FILE"
   exit 1
 fi
